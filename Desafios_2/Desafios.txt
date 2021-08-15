@@ -1,0 +1,7 @@
+1) Gerar um número de 1 a 100, 
+e solicitar para que o usuário tente
+ adivinhar o número.
+
+2) Receba um endereço de e-mail, 
+e faça um sistema que receba os 
+dados do usuário.
