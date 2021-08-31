@@ -16,6 +16,7 @@ class RealizaPagamento:
     def data_formatada(self):
         return self.momento_cadastro.strftime('%d/%m/%Y  %H:%M')
 
+# Salva a transação em um .csv
     def registra(self):
         caminho = 'Exercício_1/pagamentos.csv'
         banco = self._banco.exibe()
@@ -31,7 +32,7 @@ Banco: {self._banco.exibe()}
 Valor (com taxa): {self._valor}
 Data do registro: {self.data_formatada()}'''
 
-
+# Código para rodas
 if __name__ == '__main__':
 
     print('Qual o banco para a tranzação?')
@@ -40,9 +41,7 @@ if __name__ == '__main__':
 
     banco_user = int(input('Digite o código:  '))
     valor_user = float(input('Digite o valor da transação: '))
-    os.system('cls')
+    os.system('cls') #limpa o terminal
 
     transacao = RealizaPagamento(banco_user, valor_user)
     print(transacao)
-
-
